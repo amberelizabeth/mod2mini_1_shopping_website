@@ -1,8 +1,14 @@
 /*--- Header ---*/
+#logo-main{
+    max-width: 200px;
+}
 #top-bar, .navbar, footer,
 #shop-items .btn{
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
+}
+.dropdown-menu {
+    z-index: 1001;
 }
 #top-bar, footer{
     background-color:#FAC1BA;
@@ -39,19 +45,20 @@ body{
     border: 1px solid #EFA8AC;
 }
 
+
 /*--------------------
   Assignment - change navbar background color at three breakpoints */
-@media (max-width: 1000px) {  
+@media (max-width: 1200px) {  
     .navbar-nav{
         background-color:#FAC1BA;
     }
 }
-@media (max-width: 800px) {  
+@media (max-width: 1000px) {  
     .navbar-nav{
         background-color:aqua;
     }
 }
-@media (max-width: 400px) {  
+@media (max-width: 800px) {  
     .navbar-nav{
         background-color: #F1EF87;
     }
@@ -67,19 +74,19 @@ body{
 } 
 
 
-/* CUSTOMIZE THE CAROUSEL
+/* Carousel
 -------------------------------------------------- */
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
     bottom: 3rem;
-  } 
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
+} 
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
     height: 22rem;
     background-color: #f78da7;
-  }
+}
 
-   .carousel-item > img {
+.carousel-item > img {
     height: 100%;
-  } 
+} 
